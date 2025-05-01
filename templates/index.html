@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clima App</title>
+</head>
+<body>
+    <h1>Consulta del Clima</h1>
+    <form method="POST">
+        <input type="text" name="ciudad" placeholder="Ingresa una ciudad" required>
+        <button type="submit">Consultar</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if clima %}
+        <h2>Clima en {{ clima.ciudad }}</h2>
+        <ul>
+            <li>🌡️ Temperatura: {{ clima.temperatura }} °C</li>
+            <li>💧 Humedad: {{ clima.humedad }} %</li>
+            <li>🌬️ Viento: {{ clima.viento }} m/s</li>
+            <li>🔎 Descripción: {{ clima.descripcion }}</li>
+        </ul>
+    {% endif %}
+</body>
+</html>
