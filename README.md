@@ -64,15 +64,13 @@ Uso con Docker
 
 Construir la imagen:
 
-docker build -t app-tiempo .
+docker build -t app-tiempo
 
 
 Ejecutar el contenedor:
 
 docker run -d -p 5000:5000 --env API_KEY=TU_API_KEY_DE_OPENWEATHER app-tiempo
-
-
-
+ó si usas Docker Desktop, en la seccion de Imagenes, vas a encontrar el nombre de AppTiempo. Tenes que hacer click en "Start"
 
 Abrir en el navegador:
 http://localhost:5000
