@@ -31,30 +31,35 @@ Contenedores: Docker
 Dependencias: requirements.txt
 
 Instalación y uso
+
 1. Clonar el repositorio
 git clone https://github.com/Juancho599/AppTiempo.git
-y pasar a la carpeta AppTiempo  
+
+2. Posicionarse en a la carpeta AppTiempo  
 cd AppTiempo
 
-3. Crear un entorno virtual 
+3. Dentro de la carpeta AppTiempo, crear un entorno virtual con: 
 python -m venv venv
+
+4. Activá el entorno virtual desde la Terminal de tu S.O.
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-4. Instalar dependencias
-pip install -r requirements.txt ó python3 -m pip install -r requirements.txt (En caso de que tengas varias versiones de Python)
+5. Instalar dependencias en la Terminal
+pip install -r requirements.txt                                                                                                  ó en caso de que tengas Python con otras versiones:  python3 -m pip install -r requirements.txt 
 
 
-5. Configurar la API Key de OpenWeatherMap
+6. Configurar la API Key de OpenWeatherMap
 
-Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
+Crea un archivo llamado .env dentro AppTiempo con el contenido:
 
 API_KEY=TU_API_KEY_DE_OPENWEATHER
 
-
 Podés obtener una API Key gratuita en: https://openweathermap.org/appid
 
-5. Ejecutar la aplicación localmente
+7. Luego mueve el archivo .env hacia .gitignore
+
+8. Ejecutar la aplicación localmente
 python MainTiempo.py
 
 
