@@ -33,15 +33,15 @@ Dependencias: requirements.txt
 Instalación y uso
 1. Clonar el repositorio
 git clone https://github.com/Juancho599/AppTiempo.git
-Pasar a la carpeta AppTiempo
+y pasar a la carpeta AppTiempo  
 cd AppTiempo
 
-2. Crear un entorno virtual 
+3. Crear un entorno virtual 
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-3. Instalar dependencias
+4. Instalar dependencias
 pip install -r requirements.txt ó python3 -m pip install -r requirements.txt (En caso de que tengas varias versiones de Python)
 
 
