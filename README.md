@@ -33,6 +33,7 @@ Dependencias: requirements.txt
 Instalación y uso
 1. Clonar el repositorio
 git clone https://github.com/Juancho599/AppTiempo.git
+Pasar a la carpeta AppTiempo
 cd AppTiempo
 
 2. Crear un entorno virtual 
