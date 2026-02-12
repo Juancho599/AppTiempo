@@ -1,3 +1,21 @@
+# Python
 __pycache__/
 *.pyc
-env/
+*.pyo
+*.pyd
+.env
+
+# Virtualenv / packages
+bin/
+lib/
+lib64/
+include/
+*.dist-info/
+site-packages/
+
+# AWS / deploy
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
